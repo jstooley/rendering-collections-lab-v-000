@@ -6,6 +6,6 @@
     <th>Price
     <th>Customer</th>
   </tr>
-  <%= render partial: 'orders', locals: {orders: @orders} %>
+  <%= render(@orders) || "There are no orders." %>
 
 </table>
