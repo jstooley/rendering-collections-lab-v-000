@@ -6,7 +6,6 @@
     <th>Price
     <th>Customer</th>
   </tr>
-  <% @orders.each do |order| %>
-    <%= render 'orders', locals: {orders: @orders}%>
-  <% end %>
+  <%= render 'orders', locals: {orders: @orders}%>
+  
 </table>
